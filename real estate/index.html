@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeHaven Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Prime<span>Haven</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#search">Search</a>
+      <a href="#properties">Properties</a>
+      <a href="#compare">Compare</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Find Your Next Home</h1>
+    <p>Discover houses, modern apartments, and rental spaces tailored to your needs.</p>
+  </section>
+
+  <!-- Search & Filter Bar -->
+  <section id="search" class="filter-wrapper">
+    <form class="filter-bar">
+      <div class="filter-item">
+        <label for="location">Location</label>
+        <select id="location">
+          <option value="">All Locations</option>
+          <option value="downtown">Downtown</option>
+          <option value="suburbs">Green Suburbs</option>
+          <option value="beach">Palm Coast</option>
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label for="type">Property Type</label>
+        <select id="type">
+          <option value="">All Types</option>
+          <option value="house">House / Villa</option>
+          <option value="apartment">Apartment</option>
+          <option value="rental">Rental Flat</option>
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label for="budget">Price Range</label>
+        <select id="budget">
+          <option value="">Any Price</option>
+          <option value="low">Under ₹30,000 / mo</option>
+          <option value="mid">₹50 Lakhs - ₹1 Crore</option>
+          <option value="high">Above ₹1 Crore</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn-search">Apply Filter</button>
+    </form>
+  </section>
+
+  <!-- Property Cards Section (3 Main Categories) -->
+  <section id="properties" class="container">
+    <h2 class="title">Featured Properties</h2>
+    
+    <div class="cards-grid">
+      <!-- House / Villa -->
+      <div class="card">
+        <span class="tag sale">For Sale</span>
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=500&auto=format&fit=crop" alt="Luxury Villa">
+        <div class="card-content">
+          <p class="price">₹1.85 Cr</p>
+          <h3>Sunset Green Villa</h3>
+          <p class="location">📍 Palm Coast, East Bay</p>
+          <p class="desc">Independent 4 BHK duplex home featuring a private lawn, garage, and modular kitchen.</p>
+          <div class="amenities">
+            <span>🛏️ 4 Beds</span>
+            <span>🚿 4 Baths</span>
+            <span>🚗 2 Parking</span>
+          </div>
+          <a href="#contact" class="btn-card">Inquire Now</a>
+        </div>
+      </div>
+
+      <!-- Modern Apartment -->
+      <div class="card">
+        <span class="tag sale">For Sale</span>
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&auto=format&fit=crop" alt="Apartment">
+        <div class="card-content">
+          <p class="price">₹75 Lakhs</p>
+          <h3>Skyline Heights 3BHK</h3>
+          <p class="location">📍 Downtown Financial Hub</p>
+          <p class="desc">Spacious 14th-floor apartment with skyline balcony views, gym, and swimming pool access.</p>
+          <div class="amenities">
+            <span>🛏️ 3 Beds</span>
+            <span>🚿 2 Baths</span>
+            <span>🏊 Pool Access</span>
+          </div>
+          <a href="#contact" class="btn-card">Inquire Now</a>
+        </div>
+      </div>
+
+      <!-- Rental Property -->
+      <div class="card">
+        <span class="tag rent">For Rent</span>
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500&auto=format&fit=crop" alt="Rental Flat">
+        <div class="card-content">
+          <p class="price">₹25,000 / month</p>
+          <h3>Greenfield Studio Flat</h3>
+          <p class="location">📍 Green Suburbs, Sector 4</p>
+          <p class="desc">Furnished 1 BHK apartment close to public transit, ideal for students and professionals.</p>
+          <div class="amenities">
+            <span>🛏️ 1 Bed</span>
+            <span>🚿 1 Bath</span>
+            <span>⚡ Power Backup</span>
+          </div>
+          <a href="#contact" class="btn-card">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Comparison Table -->
+  <section id="compare" class="container bg-light">
+    <h2 class="title">Property Comparison</h2>
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Location</th>
+            <th>Area</th>
+            <th>Key Amenities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Sunset Green Villa</strong></td>
+            <td>House / Villa</td>
+            <td class="table-price">₹1.85 Cr</td>
+            <td>Palm Coast</td>
+            <td>3,200 sq.ft</td>
+            <td>Private Garden, Terrace, Solar Backup</td>
+          </tr>
+          <tr>
+            <td><strong>Skyline Heights</strong></td>
+            <td>Apartment</td>
+            <td class="table-price">₹75 Lakhs</td>
+            <td>Downtown</td>
+            <td>1,450 sq.ft</td>
+            <td>Gym, Swimming Pool, Clubhouse</td>
+          </tr>
+          <tr>
+            <td><strong>Greenfield Studio</strong></td>
+            <td>Rental Flat</td>
+            <td class="table-price">₹25,000/mo</td>
+            <td>Green Suburbs</td>
+            <td>650 sq.ft</td>
+            <td>Furnished, High-speed Wi-Fi, Lift</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact & Inspection Form -->
+  <section id="contact" class="container">
+    <h2 class="title">Book a Property Visit</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="+91 9876543210" required>
+        </div>
+        <div class="form-group">
+          <label for="prop">Select Property:</label>
+          <select id="prop" required>
+            <option value="">Choose a property</option>
+            <option value="villa">Sunset Green Villa (₹1.85 Cr)</option>
+            <option value="apartment">Skyline Heights 3BHK (₹75 Lakhs)</option>
+            <option value="rental">Greenfield Studio (₹25,000/mo)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Visit Date:</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Simple Footer -->
+  <footer>
+    <p>&copy; 2026 PrimeHaven Real Estate. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

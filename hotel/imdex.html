@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand View Hotel - Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Grand View Hotel</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms & Tariffs</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#booking">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Experience Luxury & Comfort</h1>
+      <p>Book your perfect stay with world-class hospitality and amenities.</p>
+      <a href="#booking" class="btn">Reserve a Room</a>
+    </div>
+  </section>
+
+  <!-- Room Categories & Tariffs -->
+  <section id="rooms" class="section">
+    <h2 class="section-title">Our Rooms & Suites</h2>
+    <div class="room-grid">
+
+      <!-- Room Card 1 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop" alt="Standard Deluxe Room">
+        <div class="room-info">
+          <h3>Standard Deluxe Room</h3>
+          <p class="tariff">₹2,499 / night</p>
+          <ul class="room-features">
+            <li>1 King Bed</li>
+            <li>Free Wi-Fi & TV</li>
+            <li>Complimentary Breakfast</li>
+          </ul>
+          <a href="#booking" class="card-btn">Select Room</a>
+        </div>
+      </div>
+
+      <!-- Room Card 2 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop" alt="Executive Suite">
+        <div class="room-info">
+          <h3>Executive Suite</h3>
+          <p class="tariff">₹4,999 / night</p>
+          <ul class="room-features">
+            <li>King Bed & Living Area</li>
+            <li>City View Balcony</li>
+            <li>Mini Bar & Room Service</li>
+          </ul>
+          <a href="#booking" class="card-btn">Select Room</a>
+        </div>
+      </div>
+
+      <!-- Room Card 3 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500&auto=format&fit=crop" alt="Presidential Suite">
+        <div class="room-info">
+          <h3>Presidential Suite</h3>
+          <p class="tariff">₹8,999 / night</p>
+          <ul class="room-features">
+            <li>Jacuzzi & Private Lounge</li>
+            <li>Panoramic Ocean View</li>
+            <li>24/7 Dedicated Butler</li>
+          </ul>
+          <a href="#booking" class="card-btn">Select Room</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="section bg-light">
+    <h2 class="section-title">Hotel Facilities</h2>
+    <div class="facility-grid">
+      <div class="facility-item">
+        <h3>🏊 Swimming Pool</h3>
+        <p>Temperature-controlled infinity pool overlooking the gardens.</p>
+      </div>
+      <div class="facility-item">
+        <h3>🍽️ Fine Dining</h3>
+        <p>Multi-cuisine restaurants with chef-crafted delicacies.</p>
+      </div>
+      <div class="facility-item">
+        <h3>💆 Wellness Spa</h3>
+        <p>Relaxing massage therapies and rejuvenating sauna sessions.</p>
+      </div>
+      <div class="facility-item">
+        <h3>🚗 Free Parking</h3>
+        <p>Secure 24/7 valet and self-parking on premises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking & Reservation Form -->
+  <section id="booking" class="section">
+    <h2 class="section-title">Reservation Form</h2>
+    <div class="form-container">
+      <form action="#" method="post">
+        
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="roomtype">Room Category:</label>
+            <select id="roomtype" name="roomtype" required>
+              <option value="">Select Room Type</option>
+              <option value="standard">Standard Deluxe (₹2,499)</option>
+              <option value="executive">Executive Suite (₹4,999)</option>
+              <option value="presidential">Presidential Suite (₹8,999)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests">
+              <option value="1">1 Adult</option>
+              <option value="2">2 Adults</option>
+              <option value="3">3 Adults</option>
+              <option value="4+">4+ Guests</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="requests">Special Requests (Optional):</label>
+          <textarea id="requests" name="requests" rows="3" placeholder="Late check-in, ground floor, extra pillows..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Reservation</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Grand View Hotel. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
